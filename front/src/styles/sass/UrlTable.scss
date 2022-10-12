@@ -1,0 +1,131 @@
+@import 'variables';
+
+.table-container {
+    background-image: url(../../bg-img.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    .table-info-container {
+        background-color: $black-nav;
+        display: flex;
+        flex-direction: row;
+        margin: 20px;
+        border-radius: 10px;
+        border: 1px solid #3486d2;
+        .table-row {
+            display: flex;
+            flex-direction: column;
+            margin: 10px auto;
+            width: 90%;
+            text-align: start;
+            h4, h3, h2 {
+                inline-size: 100%;
+                overflow: hidden;
+                color: #fff;
+                a {
+                    color: #3694ca;
+                }
+                a:hover {
+                    color: #256286;
+                }
+            }
+        }
+        .table-row-cli {
+            display: flex;
+            flex-direction: column;
+            margin: 10px auto;
+            width: 20%;
+            justify-content: center;
+            text-align: center;
+            h4, h3, h2 {
+                inline-size: 100%;
+                overflow: hidden;
+                color: #fff;
+            }
+        }
+    }
+}
+
+@media screen and (min-width:300px) and (max-width:720px) {
+    .table-container {
+        width: 100%;
+        .table-info-container {
+            width: 96%;
+            flex-direction: column;
+            .table-row {
+                margin-left: 20px;
+                margin-top: 20px;
+                h4, h3, h2 {
+                    font-size: 1em;
+                }
+            }
+            .table-row-cli {
+                width: 50%;
+            }
+        }
+    }
+}
+
+@media screen and (min-width:721px) and (max-width:1279px) {
+    .table-container {
+        width: 100%;
+
+        .table-info-container {
+            flex-direction: column;
+            width: 60%;
+
+            .table-row {
+                margin-left: 30px;
+                margin-top: 30px;
+
+            }
+            .table-row-cli {
+                width: 50%;
+            }
+        }
+    }
+}
+
+@media screen and (min-width:1280px) and (max-width:1779px) {
+    .table-container {
+        width: 100%;
+
+        .table-info-container {
+            width: 60%;
+            justify-content: space-around;
+            .row-container {
+                width: 100%;
+            }
+            .table-row {
+                padding: 5px 15px;
+            }
+        }
+    }
+}
+
+@media screen and (min-width:1780px) and (max-width:2600px) {
+    .table-container {
+        width: 100%;
+
+        .table-info-container {
+            width: 60%;
+            justify-content: space-around;
+            .row-container {
+                width: 100%;
+            }
+            .table-row {
+                padding: 10px 15px;
+                h4, h3, h2 {
+                    font-size: 1.4em;
+                }
+            }
+            .table-row-cli {
+                h2 {
+                    font-size: 2.3em;
+                }
+            }
+        }
+    }
+}

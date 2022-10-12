@@ -1,0 +1,171 @@
+.form-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 80vh; }
+  .form-container form {
+    padding: 70px 20px;
+    background: #161616;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    z-index: 1;
+    border-radius: 20px;
+    border: 1px solid #409bd4; }
+    .form-container form input {
+      outline: none;
+      border: 1px solid #3486d2;
+      border-right: none;
+      height: 45px;
+      border-top-left-radius: 5px;
+      border-bottom-left-radius: 5px;
+      border-left: 1px solid #409bd4; }
+    .form-container form button {
+      color: #fff;
+      transition: all ease 0.3s;
+      border: none;
+      background: #3486d2;
+      font-weight: 600;
+      cursor: pointer;
+      height: 45px;
+      border-top-right-radius: 5px;
+      border-bottom-right-radius: 5px; }
+    .form-container form button:hover {
+      transition: all ease 0.3s;
+      background: #1b5c98; }
+  .form-container .url-info-container {
+    display: block;
+    z-index: 1;
+    background: #161616;
+    margin-top: 40px;
+    border: 1px solid #3486d2;
+    border-radius: 10px; }
+    .form-container .url-info-container .url-created-info {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      padding: 10px; }
+      .form-container .url-info-container .url-created-info h4 {
+        width: 90%;
+        overflow: hidden;
+        font-size: 1.1em;
+        color: #fff;
+        text-align: center; }
+        .form-container .url-info-container .url-created-info h4 a {
+          color: #3694ca;
+          transition: all ease 0.3s; }
+        .form-container .url-info-container .url-created-info h4 a:hover {
+          color: #256286; }
+    .form-container .url-info-container .create-another-url {
+      display: flex;
+      justify-content: center;
+      color: #fff;
+      padding: 20px 0; }
+    .form-container .url-info-container hr {
+      margin: 0px 30px; }
+  .form-container .redirect-all-urls {
+    position: absolute;
+    z-index: 1;
+    bottom: 30px; }
+    .form-container .redirect-all-urls a {
+      color: #fff;
+      transition: all ease 0.3s; }
+      .form-container .redirect-all-urls a h3 {
+        font-weight: 200; }
+    .form-container .redirect-all-urls a:hover {
+      color: #6a6a6a; }
+  .form-container .url-info-none {
+    display: none; }
+
+@media screen and (min-width: 300px) and (max-width: 480px) {
+  .form-container {
+    display: flex; }
+    .form-container form {
+      width: 96%; }
+      .form-container form input {
+        width: 100%;
+        padding-left: 15px;
+        font-size: 1.2em; }
+      .form-container form button {
+        margin-right: 20px;
+        height: 45px;
+        padding: 0px 10px; }
+    .form-container .url-info-container {
+      width: 96%; }
+      .form-container .url-info-container .url-created-info {
+        flex-direction: column; }
+        .form-container .url-info-container .url-created-info h4 {
+          margin: 10px auto;
+          overflow: hidden; }
+          .form-container .url-info-container .url-created-info h4 a {
+            font-size: 1.2em; }
+    .form-container .create-another-url {
+      font-size: 1.2em; } }
+@media screen and (min-width: 480px) and (max-width: 1279px) {
+  .form-container {
+    display: flex; }
+    .form-container form {
+      width: 90%; }
+      .form-container form input {
+        width: 60%;
+        padding: 10px;
+        height: 45px; }
+      .form-container form button {
+        margin-right: 20px;
+        height: 45px;
+        padding: 0px 10px; }
+    .form-container .url-info-container {
+      width: 90%; }
+      .form-container .url-info-container .url-created-info {
+        flex-direction: column; }
+        .form-container .url-info-container .url-created-info h4 {
+          margin: 10px 0; }
+          .form-container .url-info-container .url-created-info h4 a {
+            font-size: 1.3em; }
+    .form-container .create-another-url {
+      font-size: 1.2em; } }
+@media screen and (min-width: 1280px) and (max-width: 1780px) {
+  .form-container form {
+    display: flex;
+    width: 60%; }
+    .form-container form input {
+      height: 40px;
+      width: 450px;
+      padding-left: 15px;
+      font-size: 1.1em; }
+    .form-container form input::placeholder {
+      color: #787878; }
+    .form-container form button {
+      height: 40px;
+      padding: 0px 15px; }
+  .form-container .url-info-container {
+    width: 80%; }
+    .form-container .url-info-container .url-created-info h4 a {
+      font-size: 1.3em; }
+  .form-container .create-another-url {
+    font-size: 1.2em; } }
+@media screen and (min-width: 1781px) and (max-width: 2600px) {
+  .form-container form {
+    display: flex;
+    width: 80%;
+    padding: 100px 0; }
+    .form-container form input {
+      height: 60px;
+      width: 450px;
+      padding-left: 15px;
+      font-size: 1.2em; }
+    .form-container form button {
+      height: 60px;
+      padding: 0px 15px;
+      font-size: 1.2em; }
+  .form-container .url-info-container {
+    width: 60%; }
+    .form-container .url-info-container .url-created-info h4 a {
+      font-size: 1.3em; }
+  .form-container .create-another-url {
+    font-size: 1.4em; } }
+
+/*# sourceMappingURL=CreationInput.css.map */
