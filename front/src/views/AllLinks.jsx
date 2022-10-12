@@ -3,7 +3,6 @@ import axios from 'axios'
 
 import Navbar from "../components/Navbar"
 import UrlTable from "../components/UrlTable"
-import Footer from "../components/Footer"
 
 function AllLinks() {
     const [links, setLinks] = useState([])
@@ -23,8 +22,6 @@ function AllLinks() {
             <Navbar/>
 
             <UrlTable urlInfo={links}/>
-            
-            <Footer/>
         </div>
     )
 }

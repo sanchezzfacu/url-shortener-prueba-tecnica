@@ -8,7 +8,7 @@ router.get('/', async (req, res) => {
         res.send(shortUrls)
     }
     catch(err) {
-        throw err
+        res.status(500).send(err)
     }
 })
 

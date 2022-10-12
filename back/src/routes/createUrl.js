@@ -7,12 +7,10 @@ router.post('/', async (req, res) => {
     try {
         let urlCreated = await ShortUrl.create({ fullUrlVersion : fullUrlVersion })
         let saveUrlCreated = await ShortUrl.findOne({fullUrlVersion: urlCreated.fullUrlVersion})
-        console.log(saveUrlCreated)
         res.send(saveUrlCreated).status(200)
     }
-    catch(error) {
-        res.send(error.message)
-        res.status(500)
+    catch(err) {
+        res.status(500).send(err.message)
     }
 })
 

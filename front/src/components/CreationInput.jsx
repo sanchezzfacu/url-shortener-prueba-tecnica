@@ -7,18 +7,6 @@ function CreationInput() {
     const [input, setInput] = useState('')
     const [urlInfo, setUrlInfo] = useState([])
 
-
- /**
-  * It takes the input from the user, creates an object with the input, and then sends that object to
-  * the server. 
-  * 
-  * The server then creates a new object with the input and a random string, and sends that object back
-  * to the client. 
-  * 
-  * The client then sets the state of the urlInfo to the object that was sent back from the server. 
-  * 
-  * The urlInfo state is then used to display the shortened url to the user.
-  */
     async function generateUrl(e) {
         e.preventDefault()
         let urlObj = {fullUrlVersion: input}

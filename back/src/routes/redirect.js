@@ -10,9 +10,8 @@ router.get('/:shortUrl', async (req, res) => {
         shortUrl.save()
     
         res.status(200).send(shortUrl.fullUrlVersion)
-    } catch (error) {
-        res.sendStatus(404)
-        throw new Error
+    } catch (err) {
+        res.status(404).send(err)
     }
 })
 
